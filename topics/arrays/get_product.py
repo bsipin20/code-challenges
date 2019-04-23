@@ -36,12 +36,12 @@ def products(nums):
 
     """
     What are the core concepts? What other problems might they apply?
+    Core concepts: precomputing results from subarrays and then using those to build a solution
  
+
     >>> get_product([1,2,3,4,5])
     [120, 60, 40, 30, 24]
     """
-
-
        
 
     # Generate prefix products.
@@ -85,9 +85,5 @@ def products(nums):
 
 if __name__ == "__main__":
         import doctest
-        #t = get_product([3,2,1])
-        #print(t)
-        t = products([1,2,3,4,5])
-        print(t)
         doctest.testmod()
 
